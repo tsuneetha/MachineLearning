@@ -32,11 +32,6 @@ def recommendations(x,y):
         if v not in y:
             rec.append(v)
     return rec
-u=["ravi","sunita","phani","Jashu","Ramana","Venky","Reddy"]
-me=["phani","Jashu","Ramana","siri","Alexa"]
-#common(u,me)
-recommendations(u,me)
-recommendations(me,u)
 print(friends)
 rec={}
 for k in friends:

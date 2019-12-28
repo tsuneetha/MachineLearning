@@ -50,7 +50,7 @@ w+=grad*0.02
 """Observation from above trails is instead of decrement of loss, loss got increased. So scaling is required"""
 #step 5: Scaling
 def sd(x):
-    return (((x-x.mean())**2).sum()/(x.size-1))*0.5
+    return (((x-x.mean())**2).sum()/(x.size-1))**0.5
 def scale(x):
     return (x-x.mean())/sd(x)
 def scaleMatrix(x):
